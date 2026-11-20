@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network Engineer | Portfolio</title>
+
+<style>
+:root {
+  --bg: #080f1d;
+  --card: #111d30;
+  --blue: #168cff;
+  --cyan: #00d4ff;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #0c1729;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--cyan);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--cyan);
+}
+
+section {
+  padding: 85px 8%;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: var(--cyan);
+}
+
+.hero p {
+  color: var(--muted);
+  margin: 20px 0;
+  max-width: 550px;
+}
+
+.tag {
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--blue);
+  padding: 12px 25px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.network {
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--cyan);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 90px;
+  color: var(--cyan);
+  box-shadow: 0 0 45px #168cff55;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: var(--cyan);
+}
+
+.about {
+  background: #0d192b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #263a54;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--cyan);
+}
+
+.card h3 {
+  color: var(--cyan);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.skill {
+  margin-bottom: 22px;
+}
+
+.skill p {
+  margin-bottom: 8px;
+}
+
+.bar {
+  height: 9px;
+  background: #26364d;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+}
+
+.project {
+  border-left: 3px solid var(--cyan);
+}
+
+.contact {
+  text-align: center;
+  background: #0d192b;
+}
+
+.contact p {
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media(max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0 6px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .network {
+    width: 210px;
+    height: 210px;
+    font-size: 65px;
+  }
+
+  section {
+    padding: 65px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">NET<span>ENGINEER</span></div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <p class="tag">HELLO, WELCOME TO MY PORTFOLIO</p>
+    <h1>I'm a <span>Network Engineer</span></h1>
+    <p>
+      Saya memiliki ketertarikan pada dunia jaringan komputer,
+      network infrastructure, MikroTik, routing, switching,
+      dan network security.
+    </p>
+    <a href="#projects" class="btn">Lihat Portfolio</a>
+  </div>
+
+  <div class="network">⌘</div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="title">About Me</h2>
+  <p>
+    Saya adalah seorang calon Network Engineer yang berfokus
+    pada pengembangan infrastruktur jaringan komputer.
+    Saya terus mengembangkan kemampuan dalam konfigurasi
+    router, manajemen jaringan, troubleshooting, dan
+    keamanan jaringan.
+  </p>
+</section>
+
+<section id="skills">
+  <h2 class="title">Technical Skills</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>MikroTik</h3>
+      <p>RouterOS, DHCP Server, NAT, Firewall, Hotspot, PPPoE.</p>
+    </div>
+
+    <div class="card">
+      <h3>Routing & Switching</h3>
+      <p>Static Routing, VLAN, OSPF, Switching dan TCP/IP.</p>
+    </div>
+
+    <div class="card">
+      <h3>Network Security</h3>
+      <p>Firewall, Access Control, VPN dan Network Protection.</p>
+    </div>
+
+    <div class="card">
+      <h3>Network Infrastructure</h3>
+      <p>LAN, WAN, Wireless, Fiber Optic dan Topologi Jaringan.</p>
+    </div>
+  </div>
+
+  <h2 class="title" style="margin-top:50px">Skill Level</h2>
+
+  <div class="skill">
+    <p>Networking Fundamentals</p>
+    <div class="bar"><div class="progress" style="width:75%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>MikroTik RouterOS</p>
+    <div class="bar"><div class="progress" style="width:65%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>Routing & Switching</p>
+    <div class="bar"><div class="progress" style="width:60%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>Network Security</p>
+    <div class="bar"><div class="progress" style="width:50%"></div></div>
+  </div>
+</section>
+
+<section class="about" id="projects">
+  <h2 class="title">My Projects</h2>
+
+  <div class="grid">
+    <div class="card project">
+      <h3>RT/RW Net Infrastructure</h3>
+      <p>
+        Perancangan jaringan internet berbasis ISP,
+        menggunakan MikroTik RB750Gr2 sebagai router utama,
+        DHCP Server dan NAT.
+      </p>
+    </div>
+
+    <div class="card project">
+      <h3>MikroTik Configuration</h3>
+      <p>
+        Konfigurasi WAN, LAN, DHCP Server, Firewall,
+        NAT dan bandwidth management.
+      </p>
+    </div>
+
+    <div class="card project">
+      <h3>Network Design</h3>
+      <p>
+        Perancangan topologi jaringan LAN,
+        IP Addressing, subnetting dan routing.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="title">Let's Connect</h2>
+  <p>Terbuka untuk kesempatan kerja, kolaborasi dan networking.</p>
+
+  <a href="mailto:emailkamu@example.com" class="btn">
+    Contact Me
+  </a>
+</section>
+
+<footer>
+  © 2026 Network Engineer Portfolio.
+  All Rights Reserved.
+</footer>
+
+</body>
+</html>
